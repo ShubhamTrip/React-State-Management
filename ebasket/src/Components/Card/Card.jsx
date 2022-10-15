@@ -6,8 +6,7 @@ export default class Card extends Component{
        this.state={
            item: props.itm,    // passing props
            count:props.count,
-           price:props.price
-
+           price:props.price,
        }
     }
     dec(){
@@ -17,12 +16,14 @@ export default class Card extends Component{
         })
         :
         this.setState({})
+        this.props.callback(this.state.count-1);
     }
     inc(){
         this.setState({
-            count: this.state.count+1
+            count: this.state.count+1,
         })
-        
+
+        this.props.callback(this.state.count+1);
     }
 
     render(){
