@@ -1,0 +1,22 @@
+.Navbar{
+    width: 100%;
+    background-color: orange;
+    display: flex;
+
+}
+
+.Navbar h1{
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.Navbar .Cart{
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: gray;
+    border-radius: 50%;
+}
